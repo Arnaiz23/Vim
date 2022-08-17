@@ -95,3 +95,8 @@ Si uso neovim (asi comparto el mismo archivo de configuracion de tanto vim / neo
   - nvim ~/.config/nvim/init.vim
     - source ~/.vimrc
 
+## Configuracion vscode
+
+En el caso de que quiera que se parezca al vscode. Usar el init.vim de este repo
+Antes de esto, tendria que descargar plug-vim
+Si al principio no funciona, vim -> :so ~/.config/nvim/init.vim -> :PlugInstall
