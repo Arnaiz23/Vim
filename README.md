@@ -71,6 +71,8 @@
 - P -> pegar antes de la linea del cursor (arriba de la linea)
 - R -> remplazar y lo mantiene
 - ciw -> cambiar palabra
+- diw -> cortar la palabra
+- yiw -> copiar la palabra
 - gg -> ir al inicio del archivo
 - G -> ir al final del archivo
 - 12G -> ir a la linea 12
@@ -84,8 +86,28 @@
 - v -> entra en el modo visual que te permite seleccionar
 - v seleccion x -> elimina
 - v seleccion y -> copia y luego p -> pegar
+- v seleccion d -> corta
+- yy -> copiar la linea actual
+- * sobre una palabra -> busca esa palabra
 
 
+## Atajos utiles
+
+:tabnew nombre_fichero -> abrir un fichero en una pestaña nueva
+gt -> ir a la pestaña siguiente
+gT -> ir a la pestaña anterior
+ctrl+w+s -> split horizontal
+ctrl+w+v -> split vertical
+ctrl+w+(h,j,k,l) -> cambiar entre ventanas
+ctrl+ww -> cambiar a la siguiente ventana
+ctrl+w+q -> cerrar la ventana sobre la que estas
+ctrl+w+r -> cambiar de lado las ventanas cuando sean split
+ctrl+w+> -> split ventana izquierda más grande
+ctrl+w+< -> split ventana izquierda mas pequeña
+ctrl+w+= -> hacer ambos lados iguales
+:vertical resize +5 -> aumentar el tamaño de la ventana split actual ancho de 5 columnas
+:vertical rezie -5 -> disminuir el ancho de la ventana en 5 columnas
+:! <command> -> Ej -> ! touch prueba.txt -> ! mkdir another
 
 --------------------------------------------------------------------
 ## Configuracion de vim / neovim
@@ -100,3 +122,11 @@ Si uso neovim (asi comparto el mismo archivo de configuracion de tanto vim / neo
 En el caso de que quiera que se parezca al vscode. Usar el init.vim de este repo
 Antes de esto, tendria que descargar plug-vim
 Si al principio no funciona, vim -> :so ~/.config/nvim/init.vim -> :PlugInstall
+
+
+## Informacion del Tree de vim
+
+- C -> change tree directory to actual
+- r -> refresh the tree (in the case if I create a new file but not appeard)
+- I -> toggle hidden files
+- m -> menu
