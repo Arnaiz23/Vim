@@ -16,8 +16,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot' " Resaltado de sintaxis
 Plug 'jiangmiao/auto-pairs' " Autocompletado parentesis etc
 Plug 'alvan/vim-closetag' " Cierre automatico de etiquetas
-Plug 'sirver/ultisnips' " Snippets
+"Plug 'sirver/ultisnips' " Snippets
 "Plug 'neoclide/coc.nvim', {'branch' : 'release'} "Autocompletado
+Plug 'dense-analysis/ale' " Prettier al guardar
 
 call plug#end()
 
@@ -30,7 +31,6 @@ colorscheme onedark  " Activa tema onedark
 let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
 " Abrir/cerrar NERDTree con F2
 map <F2> :NERDTreeToggle<CR>
-
 
 let g:airline#extensions#tabline#enabled = 1  " Mostrar buffers abiertos (como pestañas)
 let g:airline#extensions#tabline#fnamemod = ':t'  " Mostrar sólo el nombre del archivo
@@ -48,3 +48,15 @@ augroup deopleteCompleteDoneAu
   autocmd!
   autocmd CompleteDone * silent! pclose!
 augroup END
+
+
+" ALE configuration
+
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\}
+
+let g:ale_linters_explicit = 1
+
+let g:ale_fix_on_save = 1
