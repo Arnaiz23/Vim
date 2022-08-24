@@ -108,6 +108,7 @@ ctrl+w+= -> hacer ambos lados iguales
 :vertical resize +5 -> aumentar el tamaño de la ventana split actual ancho de 5 columnas
 :vertical rezie -5 -> disminuir el ancho de la ventana en 5 columnas
 :! <command> -> Ej -> ! touch prueba.txt -> ! mkdir another
+Esc gg = G -> Formatear toda la pagina
 
 --------------------------------------------------------------------
 ## Configuracion de vim / neovim

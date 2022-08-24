@@ -1,0 +1,3 @@
+coc-git
+coc-snippets
+coc-tailwindcss
