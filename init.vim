@@ -15,6 +15,13 @@ Plug 'alvan/vim-closetag' " Cierre automatico de etiquetas
 Plug 'neoclide/coc.nvim', {'branch' : 'release'} "Autocompletado
 Plug 'dense-analysis/ale' " Prettier al guardar
 
+" Buscador de files
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" Iconos
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 " Luego de esta línea puedes agregar tus configuraciones y mappings
@@ -24,6 +31,7 @@ colorscheme onedark  " Activa tema onedark
 
 
 let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
+let g:NERDTreeQuitOnOpen=1 " Cierra el tree al seleccionar una opcion
 " Abrir/cerrar NERDTree con F2
 map <F2> :NERDTreeToggle<CR>
 
@@ -59,6 +67,15 @@ let g:ale_fix_on_save = 1
 " Personal shortcuts
 let mapleader = ","
 noremap <leader>w :w<cr>
+noremap <leader>F :Files<cr>
+noremap <leader>m :Maps<cr>
+noremap <leader>Q :wq<cr>
+noremap <leader>t :tabnew<cr>
+noremap <leader>e :e 
+noremap <leader>g :% s/
 
 " source coc
 source ~/.dotfiles/coc.vim
+
+" Delete errors
+ let g:coc_disable_startup_warning = 1
