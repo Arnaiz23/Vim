@@ -105,6 +105,7 @@ ctrl+w+r -> cambiar de lado las ventanas cuando sean split
 ctrl+w+> -> split ventana izquierda más grande
 ctrl+w+< -> split ventana izquierda mas pequeña
 ctrl+w+= -> hacer ambos lados iguales
+ctrl+w shift+t -> convertir la pagina del split en un nuevo tab
 :vertical resize +5 -> aumentar el tamaño de la ventana split actual ancho de 5 columnas
 :vertical rezie -5 -> disminuir el ancho de la ventana en 5 columnas
 :! <command> -> Ej -> ! touch prueba.txt -> ! mkdir another
